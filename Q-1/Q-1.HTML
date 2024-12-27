@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Carousel Banner</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .carousel-item {
+            height: 800px;
+        }
+        .carousel-item img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 1;
+        }
+        
+        .carousel-control-prev {
+            left: 20px;
+        }
+        
+        .carousel-control-next {
+            right: 20px;
+        }
+        
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .custom-arrow {
+            font-size: 24px;
+            color: white;
+        }
+
+        #bannerCarousel {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Photos/GTA-III.jfif" class="d-block w-100" alt="First slide">
+                <div class="carousel-caption">
+                    <h2>Grand Thefty Auto III</h2>
+                    <p>An open world game released by Rockstart games.</p>
+                    <button class="btn btn-warning">Shop Now</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Photos/GTA-IV.jfif" class="d-block w-100" alt="Second slide">
+                <div class="carousel-caption">
+                    <h2>Grand Thefty Auto IV</h2>
+                    <p>An open world game released by Rockstart games.</p>
+                    <button class="btn btn-warning">Shop Now</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Photos/GTA-V.jfif" class="d-block w-100" alt="Third slide">
+                <div class="carousel-caption">
+                    <h2>Grand Thefty Auto V</h2>
+                    <p>An open world game released by Rockstart games.</p>
+                    <button class="btn btn-warning">Shop Now</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+            <i class="fas fa-chevron-left custom-arrow"></i>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+            <i class="fas fa-chevron-right custom-arrow"></i>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
